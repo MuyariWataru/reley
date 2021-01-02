@@ -1,0 +1,60 @@
+
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #354e59;
+  letter-spacing: 3.6px;
+}
+
+body {
+  background-color: #eeeae4;
+}
+
+.dis-flx {
+  display: flex;
+}
+
+.dis-no {
+  display: none;
+}
+
+.jsfy-sb {
+  justify-content: space-between;
+}
+
+.header {
+  height: 60px;
+  margin: 10px 120px;
+}
+
+@media screen and (min-width: 481px) {
+  .logo {
+    height: 60px;
+    border-radius: 4px;
+  }
+
+  .logo-area {
+  
+  }
+
+  .menu-area {
+    height: 60px;
+    width: 600px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .menu {
+    width: 200px;
+    margin-left: 0px;
+    display: block;
+    padding: 12px 36px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+  }
+
+}
+
+
+
+
