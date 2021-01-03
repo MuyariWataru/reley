@@ -2,6 +2,9 @@ class TopsController < ApplicationController
   def index
   end
   
-  def new
+  def show
+  end
+  
+  def search
   end
 end
