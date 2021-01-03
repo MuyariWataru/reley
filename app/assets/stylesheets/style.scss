@@ -5,6 +5,10 @@
   letter-spacing: 3.6px;
 }
 
+*:hover {
+  color: #738e99;
+}
+
 body {
   background-color: #eeeae4;
 }
@@ -22,13 +26,13 @@ body {
 }
 
 .header {
-  height: 60px;
-  margin: 10px 120px;
+  height: 80px;
+  margin: 0 120px;
 }
 
 @media screen and (min-width: 481px) {
   .logo {
-    height: 60px;
+    height: 80px;
     border-radius: 4px;
   }
 
@@ -41,6 +45,7 @@ body {
     width: 600px;
     font-weight: 600;
     font-size: 18px;
+    margin: 10px 0;
   }
 
   .menu {
@@ -48,9 +53,9 @@ body {
     margin-left: 0px;
     display: block;
     padding: 12px 36px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 30px;
-    text-align: center;
+    text-align: end;
   }
 
 }
