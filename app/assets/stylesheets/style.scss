@@ -10,7 +10,14 @@
 }
 
 body {
-  background-color: #eeeae4;
+  background-color: #ffffff;
+}
+
+.f8-area {
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  margin: 10px 120px;
+  padding: 20px;
 }
 
 .dis-flx {
@@ -28,6 +35,7 @@ body {
 .header {
   height: 80px;
   margin: 0 120px;
+  padding: 0px 20px;
 }
 
 @media screen and (min-width: 481px) {
@@ -55,7 +63,7 @@ body {
     padding: 12px 36px;
     font-weight: 600;
     line-height: 30px;
-    text-align: end;
+    text-align: start;
   }
 
 }
