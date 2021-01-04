@@ -28,8 +28,20 @@ body {
   display: none;
 }
 
+.dis-blk {
+  display: block;
+}
+
+.jsfy-ctr {
+  justify-content: center;
+}
+
 .jsfy-sb {
   justify-content: space-between;
+}
+
+.alit-ctr {
+  align-item: center;
 }
 
 .header {
@@ -43,6 +55,7 @@ body {
   .logo {
     height: 60px;
     border-radius: 4px;
+    margin-left: 10px;
   }
 
   .logo-area {
@@ -56,13 +69,18 @@ body {
   }
 
   .menu {
-    width: 200px;
+    width: 33.333%;
     display: block;
-    padding: 12px 36px;
     font-weight: 600;
     line-height: 30px;
+    justify-content: center; 
+    align-items: center; 
   }
 
+  .menu-link {
+    text-align: center;
+    line-height: 60px;
+  }
 }
 
 
