@@ -10,7 +10,14 @@
 }
 
 body {
-  background-color: #eeeae4;
+  background-color: #f8f8f8;
+}
+
+.f8-area {
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin: 10px 120px;
+  padding: 20px;
 }
 
 .dis-flx {
@@ -21,19 +28,34 @@ body {
   display: none;
 }
 
+.dis-blk {
+  display: block;
+}
+
+.jsfy-ctr {
+  justify-content: center;
+}
+
 .jsfy-sb {
   justify-content: space-between;
 }
 
+.alit-ctr {
+  align-item: center;
+}
+
 .header {
+  width: 100%;
   height: 80px;
-  margin: 0 120px;
+  padding: 10px 120px;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 481px) {
   .logo {
-    height: 80px;
+    height: 60px;
     border-radius: 4px;
+    margin-left: 10px;
   }
 
   .logo-area {
@@ -43,21 +65,22 @@ body {
   .menu-area {
     height: 60px;
     width: 600px;
-    font-weight: 600;
     font-size: 18px;
-    margin: 10px 0;
   }
 
   .menu {
-    width: 200px;
-    margin-left: 0px;
+    width: 33.333%;
     display: block;
-    padding: 12px 36px;
     font-weight: 600;
     line-height: 30px;
-    text-align: end;
+    justify-content: center; 
+    align-items: center; 
   }
 
+  .menu-link {
+    text-align: center;
+    line-height: 60px;
+  }
 }
 
 
