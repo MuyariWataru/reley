@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-  　<meta charset="UTF-8">
-  　<meta name=”format-detection” content=”telephone=no,address=no,email=no”>
-  　<meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
     <title>Reley</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+    <meta name=”format-detection” content=”telephone=no,address=no,email=no”>
   </head>
   <body>
+    <header class="header dis-flx jsfy-sb">
+      <div class="logo-area">
+        <a href="/">
+          <%= image_tag 'logo4.png', class: 'logo' %>
+        </a>
+      </div>
+      <ul class="menu-area dis-flx jsfy-sb">
+        <li class="menu mypage">
+          <a href="#">マイページ</a>
+        </li>
+        <li class="menu signout">
+          <a href="#">ログアウト</a>
+        </li>
+        <li class="menu donation">
+          <a href="#"> 寄　　付 </a>
+        </li>
+      </ul>
+    </header>
+    <%= bootstrap_flash %>
     <%= yield %>
   </body>
 </html>
