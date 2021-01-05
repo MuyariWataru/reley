@@ -3,10 +3,15 @@
   font-family: 'Noto Sans JP', sans-serif;
   color: #354e59;
   letter-spacing: 3.6px;
+  font-size: 18px;
 }
 
-*:hover {
+a:hover {
   color: #738e99;
+}
+
+.main-section {
+  font-weight: 300;
 }
 
 body {
@@ -15,9 +20,9 @@ body {
 
 .f8-area {
   background-color: #ffffff;
-  border-radius: 3px;
+  border-radius: 5px;
   margin: 10px 120px;
-  padding: 20px;
+  padding: 30px 60px;
 }
 
 .dis-flx {
@@ -51,36 +56,70 @@ body {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 481px) {
-  .logo {
+.logo {
     height: 60px;
     border-radius: 4px;
-    margin-left: 10px;
-  }
+}
 
-  .logo-area {
+.menu-area {
+  height: 60px;
+  width: 600px;
+  font-size: 18px;
+}
+
+.menu {
+  width: 33.333%;
+  display: block;
+  font-weight: 600;
+  line-height: 30px;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.menu-link {
+  text-align: end;
+  line-height: 60px;
+}
   
-  }
+.search-area {
+  height: 40px;
+}
 
-  .menu-area {
-    height: 60px;
-    width: 600px;
-    font-size: 18px;
-  }
+.search-title {
+  padding: 0px 0px 20px 20px;
+}
 
-  .menu {
-    width: 33.333%;
-    display: block;
-    font-weight: 600;
-    line-height: 30px;
-    justify-content: center; 
-    align-items: center; 
-  }
+.search-input {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 0px 20px 3px 20px;
+  width: 600px;
+  border: solid 2.5px #354e59;
+  margin-right: 30px;
+}
 
-  .menu-link {
-    text-align: center;
-    line-height: 60px;
-  }
+.search-submit{
+  background-color: #354e59;
+  color: #ffffff;
+  display: block;
+  width: 120px;
+  border-radius: 20px;
+  height: 40px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+.search-error-message {
+  padding: 20px 0px 0px 20px;
+}
+
+.error-message {
+  font-size: 14px;
+  color: red;
+}
+
+@media screen and (min-width: 481px) {
+  
 }
 
 
