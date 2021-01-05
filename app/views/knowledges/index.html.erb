@@ -1,0 +1,19 @@
+<div class="main-section">
+  <main class="main">
+    <div class="search-area f8-area">
+    <%= form_tag('/knowledges', method: :get) do %>
+      <input class="search-input" name="keyword" type="text" value=""></input>
+      <button class="search-submit" title="検索" type="submit"></button>
+    <% end %>
+    
+    </div>
+    <div class="post-area f8-area"></div>
+    <div class="posted-slide-area f8-area"></div>
+    <div class="study-area f8-area">
+      <div class="2week-study-area"></div>
+      <div class="tag-study-area"></div>
+    </div>
+  </main>
+  <footer class="footer">
+  </footer>
+</div>
