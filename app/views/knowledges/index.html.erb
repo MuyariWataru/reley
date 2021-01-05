@@ -1,11 +1,18 @@
 <div class="main-section">
   <main class="main">
-    <div class="search-area f8-area">
-    <%= form_tag('/knowledges', method: :get) do %>
-      <input class="search-input" name="keyword" type="text" value=""></input>
-      <button class="search-submit" title="検索" type="submit"></button>
-    <% end %>
-    
+    <div class="f8-area">
+      <h1 class="search-title">キーワードから検索する</h1>
+      <div class="search-area ">
+        <%= form_tag('/knowledges/search', method: :get, class: "search-area dis-flx") do %>
+          <input class="search-input" name="keyword" type="text" value=""></input>
+          <input class="search-submit" title="検索" type="submit"></input>
+        <% end %>
+      </div>
+      <div class="search-error-message dis-no">
+        <h2 class="error-message">
+          ここにエラーメッセージ（keywordがnullでsubmitが実行された場合に「※キーワードを入力してください。」）を表示するjsを組み込む。
+        </h2>
+      </div>
     </div>
     <div class="post-area f8-area"></div>
     <div class="posted-slide-area f8-area"></div>
