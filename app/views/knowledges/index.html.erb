@@ -8,13 +8,24 @@
           <input class="search-submit" title="検索" type="submit"></input>
         <% end %>
       </div>
-      <div class="search-error-message dis-no">
-        <h2 class="error-message">
+      <div class="search-error-message dis-n">
+      <h2 class="error-message">
           ここにエラーメッセージ（keywordがnullでsubmitが実行された場合に「※キーワードを入力してください。」）を表示するjsを組み込む。
         </h2>
       </div>
     </div>
-    <div class="post-area f8-area"></div>
+    <div class="post-area f8-area">
+      <h1 class="post-title">新しく投稿する</h1>
+      <div class="post-area ">
+        <%= form_for @knowledge do |f| %>
+        <% end %>
+      </div>
+      <div class="post-error-message dis-n">
+      <h2 class="error-message">
+          ここにエラーメッセージ（keywordがnullでsubmitが実行された場合に「※キーワードを入力してください。」）を表示するjsを組み込む。
+        </h2>
+      </div>
+    </div>
     <div class="posted-slide-area f8-area"></div>
     <div class="study-area f8-area">
       <div class="2week-study-area"></div>

@@ -92,7 +92,7 @@ body {
 .search-input {
   background-color: #f8f8f8;
   border-radius: 20px;
-  padding: 0px 20px 3px 20px;
+  padding: 0px 20px 4px 20px;
   width: 600px;
   border: solid 2.5px #354e59;
   margin-right: 30px;
@@ -105,7 +105,7 @@ body {
   width: 120px;
   border-radius: 20px;
   height: 40px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
   text-align: center;
 }
 
@@ -116,6 +116,10 @@ body {
 .error-message {
   font-size: 14px;
   color: red;
+}
+
+.post-title {
+  padding: 0px 0px 20px 20px;
 }
 
 @media screen and (min-width: 481px) {
