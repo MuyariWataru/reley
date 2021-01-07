@@ -8,19 +8,27 @@
           <input class="search-submit" title="検索" type="submit"></input>
         <% end %>
       </div>
-      <div class="search-error-message dis-n">
+      <div class="search-error-message dis-no">
       <h2 class="error-message">
           ここにエラーメッセージ（keywordがnullでsubmitが実行された場合に「※キーワードを入力してください。」）を表示するjsを組み込む。
         </h2>
       </div>
     </div>
-    <div class="post-area f8-area">
+    <div class="f8-area">
       <h1 class="post-title">新しく投稿する</h1>
       <div class="post-area ">
         <%= form_for @knowledge do |f| %>
+          <div class="post-area-title">
+            <%= f.text_field :title, placeholder: "タイトル", class: "knowledge-title dis-blk" %>
+          </div>
+          <div class="post-area-text">
+            <%= f.text_field :text, placeholder: "テキスト", class: "knowledge-text dis-blk", size: "40x20" %>
+          </div>
+          <div class="post-submit">
+          </div>
         <% end %>
       </div>
-      <div class="post-error-message dis-n">
+      <div class="post-error-message dis-no">
       <h2 class="error-message">
           ここにエラーメッセージ（keywordがnullでsubmitが実行された場合に「※キーワードを入力してください。」）を表示するjsを組み込む。
         </h2>
