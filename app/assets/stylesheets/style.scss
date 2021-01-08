@@ -10,6 +10,11 @@ a:hover {
   color: #738e99;
 }
 
+.main {
+  width: 900px;
+  margin: 0 auto;
+}
+
 .main-section {
   font-weight: 300;
 }
@@ -21,8 +26,9 @@ body {
 .f8-area {
   background-color: #ffffff;
   border-radius: 5px;
-  margin: 10px 120px;
+  margin: 10px 0px;
   padding: 30px 60px;
+  width: 870px;
 }
 
 .dis-flx {
@@ -92,10 +98,11 @@ body {
 .search-input {
   background-color: #f8f8f8;
   border-radius: 20px;
-  padding: 0px 20px 4px 20px;
+  padding: 0px 20px 0px 20px;
   width: 600px;
   border: solid 2.5px #354e59;
   margin-right: 30px;
+  line-height: 35px;
 }
 
 .search-submit{
@@ -124,7 +131,7 @@ body {
 
 .knowledge-title {
   height: 40px;
-  width: 600px;
+  width: 750px;
   border: solid 2.5px #354e59;
   border-bottom: solid 1.25px #d3d3d3;
   background-color: #f8f8f8;
@@ -134,12 +141,12 @@ body {
 
 .knowledge-text {
   height: 320px;
-  width: 600px;
+  width: 750px;
   border: solid 2.5px #354e59;
   border-top: solid 1.25px #d3d3d3;
   border-radius: 0px 0px 20px 20px;
   background-color: #f8f8f8;
-  padding: 0px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 @media screen and (min-width: 481px) {

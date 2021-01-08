@@ -5,7 +5,7 @@
       <div class="search-area ">
         <%= form_tag('/knowledges/search', method: :get, class: "search-area dis-flx") do %>
           <input class="search-input" name="keyword" type="text" value=""></input>
-          <input class="search-submit" title="検索" type="submit"></input>
+          <input class="search-submit" value="検索" type="submit"></input>
         <% end %>
       </div>
       <div class="search-error-message dis-no">
@@ -22,9 +22,10 @@
             <%= f.text_field :title, placeholder: "タイトル", class: "knowledge-title dis-blk" %>
           </div>
           <div class="post-area-text">
-            <%= f.text_field :text, placeholder: "テキスト", class: "knowledge-text dis-blk", size: "40x20" %>
+            <%= f.text_area :text, placeholder: "テキスト", class: "knowledge-text dis-blk" %>
           </div>
           <div class="post-submit">
+            <%= f.submit value: "投稿", class: "knowledge-submit" %>
           </div>
         <% end %>
       </div>
