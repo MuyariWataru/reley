@@ -1,6 +1,6 @@
 class KnowledgesController < ApplicationController
   def index
-    @knowledge = Knowledge.new
+    @knowledge = Knowledge.create
   end
   
   def show

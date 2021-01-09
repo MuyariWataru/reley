@@ -6,6 +6,10 @@
   font-size: 18px;
 }
 
+textarea {
+  resize: none;
+}
+
 a:hover {
   color: #738e99;
 }
@@ -19,9 +23,10 @@ body {
 }
 
 .f8-area {
+  width: 900px;
   background-color: #ffffff;
   border-radius: 5px;
-  margin: 10px 120px;
+  margin: 10px auto;
   padding: 30px 60px;
 }
 
@@ -47,6 +52,10 @@ body {
 
 .alit-ctr {
   align-item: center;
+}
+
+.fw-600 {
+  font-weight: 600;
 }
 
 .header {
@@ -83,6 +92,7 @@ body {
   
 .search-area {
   height: 40px;
+  width: 750px;
 }
 
 .search-title {
@@ -124,7 +134,7 @@ body {
 
 .knowledge-title {
   height: 40px;
-  width: 600px;
+  width: 750px;
   border: solid 2.5px #354e59;
   border-bottom: solid 1.25px #d3d3d3;
   background-color: #f8f8f8;
@@ -134,12 +144,27 @@ body {
 
 .knowledge-text {
   height: 320px;
-  width: 600px;
+  width: 750px;
   border: solid 2.5px #354e59;
   border-top: solid 1.25px #d3d3d3;
   border-radius: 0px 0px 20px 20px;
   background-color: #f8f8f8;
   padding: 0px 20px 0px 20px;
+}
+
+.post-submit-btn {
+  height: 40px;
+  width: 750px;
+  border-radius: 20px;
+  background-color: #354e59;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 4px;
+  margin-top: 20px;
+}
+
+.post-error-message {
+  padding: 20px 0px 0px 20px;
 }
 
 @media screen and (min-width: 481px) {

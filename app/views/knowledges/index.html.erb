@@ -1,7 +1,7 @@
 <div class="main-section">
   <main class="main">
     <div class="f8-area">
-      <h1 class="search-title">キーワードから検索する</h1>
+      <h1 class="search-title fw-600">キーワードから検索する</h1>
       <div class="search-area ">
         <%= form_tag('/knowledges/search', method: :get, class: "search-area dis-flx") do %>
           <input class="search-input" name="keyword" type="text" value=""></input>
@@ -9,29 +9,29 @@
         <% end %>
       </div>
       <div class="search-error-message dis-no">
-      <h2 class="error-message">
-          ここにエラーメッセージ（keywordがnullでsubmitが実行された場合に「※キーワードを入力してください。」）を表示するjsを組み込む。
+        <h2 class="error-message">
+          キーワードを入力してください
         </h2>
       </div>
     </div>
     <div class="f8-area">
-      <h1 class="post-title">新しく投稿する</h1>
+      <h1 class="post-title fw-600">新しく投稿する</h1>
       <div class="post-area ">
         <%= form_for @knowledge do |f| %>
           <div class="post-area-title">
             <%= f.text_field :title, placeholder: "タイトル", class: "knowledge-title dis-blk" %>
           </div>
           <div class="post-area-text">
-            <%= f.text_field :text, placeholder: "テキスト", class: "knowledge-text dis-blk", size: "40x20" %>
+            <%= f.text_area :text, placeholder: "テキスト", class: "knowledge-text dis-blk" %>
           </div>
           <div class="post-submit">
+            <%= f.submit value: "投稿", class: "post-submit-btn dis-blk" %>
           </div>
         <% end %>
       </div>
-      <div class="post-error-message dis-no">
+      <div class="post-error-message dis-n">
       <h2 class="error-message">
-          ここにエラーメッセージ（keywordがnullでsubmitが実行された場合に「※キーワードを入力してください。」）を表示するjsを組み込む。
-        </h2>
+        タイトル・テキストを入力してください
       </div>
     </div>
     <div class="posted-slide-area f8-area"></div>
