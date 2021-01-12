@@ -10,10 +10,6 @@ textarea {
   resize: none;
 }
 
-a:hover {
-  color: #738e99;
-}
-
 .main-section {
   font-weight: 300;
 }
@@ -89,6 +85,10 @@ body {
   text-align: end;
   line-height: 60px;
 }
+
+.menu-link:hover {
+  color: #738e99;
+}
   
 .search-area {
   height: 40px;
@@ -117,6 +117,10 @@ body {
   height: 40px;
   padding-bottom: 4px;
   text-align: center;
+}
+
+.search-submit:hover {
+  background-color: #738e99;
 }
 
 .search-error-message {
@@ -163,8 +167,30 @@ body {
   margin-top: 20px;
 }
 
+.post-submit-btn:hover {
+  background-color: #738e99;
+}
+
 .post-error-message {
   padding: 20px 0px 0px 20px;
+}
+
+.two-week-studies-link {
+  height: 60px;
+  width: 750px;
+  border-radius: 20px;
+  background-color: #354e59;
+  color: #ffffff;
+  text-align: center;
+  line-height: 60px;
+}
+
+.two-week-studies-link:hover {
+  background-color: #738e99;
+}
+
+.two-week-studies-title {
+  padding: 0px 0px 20px 20px;
 }
 
 @media screen and (min-width: 481px) {
