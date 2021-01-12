@@ -1,0 +1,2 @@
+class Twoweekstudy < ApplicationRecord
+end
