@@ -1,5 +1,8 @@
 <div class="main-section">
   <main class="main">
+    <div class="message-area">
+      <!--投稿が完了したら、緑色で投稿完了メッセージを表示する。-->
+    </div>
     <div class="f8-area">
       <h1 class="search-title fw-600">キーワードから検索する</h1>
       <div class="search-area ">
@@ -17,29 +20,33 @@
     <div class="f8-area">
       <h1 class="post-title fw-600">新しく投稿する</h1>
       <div class="post-area ">
-        <%= form_for @knowledge do |f| %>
+        <%= form_for (@knowledge), method: :post do |f| %>
           <div class="post-area-title">
             <%= f.text_field :title, placeholder: "タイトル", class: "knowledge-title dis-blk" %>
+            <!--投稿が完了したら、入力されている内容をリセットする-->
           </div>
           <div class="post-area-text">
             <%= f.text_area :text, placeholder: "テキスト", class: "knowledge-text dis-blk" %>
+            <!--投稿が完了したら、入力されている内容をリセットする-->
           </div>
           <div class="post-submit">
             <%= f.submit value: "投稿", class: "post-submit-btn dis-blk" %>
           </div>
         <% end %>
       </div>
-      <div class="post-error-message dis-n">
+      <div class="post-error-message dis-no">
       <h2 class="error-message">
         タイトル・テキストを入力してください
       </div>
     </div>
     <div class="posted-slide-area f8-area dis-no"></div>
     <div class="2week-study-area f8-area">
-      <h2 class="two-week-studies-title fw-600">過去１週間以内に登録・学習した知識の復習をします</h2>
-      <%= link_to '学習を始める', twoweekstudies_path, class: 'two-week-studies-link dis-blk' %>
+      <h2 class="studies-title fw-600">過去１週間以内に登録・学習した知識の復習をします</h2>
+      <%= link_to '学習を始める', twoweekstudies_path, class: 'studies-link dis-blk' %>
     </div>
     <div class="tag-study-area f8-area">
+      <h2 class="studies-title fw-600">ハッシュタグから知識の復習をします</h2>
+      <%= link_to '学習を始める', hashtags_path, class: 'studies-link dis-blk' %>
     </div>
     </div>
   </main>
