@@ -7,4 +7,5 @@ Rails.application.routes.draw do
     end
   end
   resources :twoweekstudies, only: [:index]
+  resources :hashtags, only: [:index]
 end
