@@ -13,22 +13,24 @@
   </head>
   <body>
     <header class="header dis-flx jsfy-sb">
-      <div class="logo-area">
-        <a href="/">
-          <%= image_tag 'logo4.png', class: 'logo' %>
-        </a>
+      <div class="header-area dis-flx jsfy-sb">
+        <div class="logo-area">
+          <a href="/">
+            <%= image_tag 'logo4.png', class: 'logo' %>
+          </a>
+        </div>
+        <ul class="menu-area dis-flx jsfy-sb">
+          <li class="menu">
+            <a href="#" class="menu-link dis-blk">マイページ</a>
+          </li>
+          <li class="menu">
+            <a href="#" class="menu-link dis-blk">ログアウト</a>
+          </li>
+          <li class="menu">
+            <a href="#" class="menu-link dis-blk">寄　　付</a>
+          </li>
+        </ul>
       </div>
-      <ul class="menu-area dis-flx jsfy-sb">
-        <li class="menu">
-          <a href="#" class="menu-link dis-blk">マイページ</a>
-        </li>
-        <li class="menu">
-          <a href="#" class="menu-link dis-blk">ログアウト</a>
-        </li>
-        <li class="menu">
-          <a href="#" class="menu-link dis-blk">寄　　付</a>
-        </li>
-      </ul>
     </header>
     <%= bootstrap_flash %>
     <%= yield %>
